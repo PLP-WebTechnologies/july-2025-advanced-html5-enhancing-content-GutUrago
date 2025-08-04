@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img, audio, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+        }
+        form {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+            color: #555;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        input[type="number"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #5cb3fd;
+            outline: none;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Assignment: Enhanced HTML5 Content & Mastering Forms</h1>
+            <p>Demonstrating the use of lists, tables, media, and a complete HTML5 form with native validation.</p>
+        </header>
+
+        <section id="content-section">
+            <h2>Our Products and Services</h2>
+
+            <section id="lists-section">
+                <h3>Key Features of Our Service</h3>
+                <p>We offer a range of features designed to meet your needs:</p>
+                <ul>
+                    <li>Seamless user experience across all devices.</li>
+                    <li>24/7 customer support via multiple channels.</li>
+                    <li>Secure and reliable data storage.</li>
+                    <li>Flexible subscription plans to fit any budget.</li>
+                </ul>
+
+                <h3>Steps to Get Started</h3>
+                <p>Follow these simple steps to begin:</p>
+                <ol>
+                    <li>Register an account on our website.</li>
+                    <li>Choose a subscription plan that suits you.</li>
+                    <li>Complete your profile information.</li>
+                    <li>Start using our services!</li>
+                </ol>
+            </section>
+
+            <section id="tables-section">
+                <h3>Product Pricing Table</h3>
+                <table>
+                    <caption>Comparison of our most popular plans</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Plan</th>
+                            <th scope="col">Price per month</th>
+                            <th scope="col">Features Included</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Basic</th>
+                            <td>$9.99</td>
+                            <td>Limited storage, email support</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pro</th>
+                            <td>$29.99</td>
+                            <td>Unlimited storage, 24/7 support, advanced analytics</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Enterprise</th>
+                            <td>Custom pricing</td>
+                            <td>All Pro features, dedicated account manager, API access</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Contact us for custom enterprise solutions.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section id="media-section">
+                <h3>Media Gallery</h3>
+                
+                <h4>Our Office Building</h4>
+                <figure>
+                    <img src="https://via.placeholder.com/800x400.png?text=Office+Building+Image" alt="A photo of our modern office building.">
+                    <figcaption>A visual of our main headquarters.</figcaption>
+                </figure>
+
+                <h4>Introductory Audio Clip</h4>
+                <p>Listen to a short welcome message from our CEO:</p>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <h4>Product Demonstration Video</h4>
+                <p>Watch a brief demo of our core product features:</p>
+                <video controls width="100%">
+                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+        </section>
+
+        <section id="form-section">
+            <h2>Contact & Registration Form</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="full_name">Full Name:</label>
+                        <input type="text" id="full_name" name="full_name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email_address">Email Address:</label>
+                        <input type="email" id="email_address" name="email_address" placeholder="john.doe@example.com" required autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone_number">Phone Number:</label>
+                        <input type="tel" id="phone_number" name="phone_number" placeholder="e.g., 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Phone number must be in the format: 123-456-7890" autocomplete="tel">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="5">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Min. 8 characters" required minlength="8">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Repeat your password" required minlength="8" readonly>
+                        <small>Note: This field is read-only for demonstration purposes.</small>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div class="form-group">
+                        <label for="subscription">Subscription Tier:</label>
+                        <select id="subscription" name="subscription" required>
+                            <option value="">-- Please choose an option --</option>
+                            <option value="basic">Basic</option>
+                            <option value="pro">Pro</option>
+                            <option value="enterprise">Enterprise</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="website_url">Your Website (optional):</label>
+                        <input type="url" id="website_url" name="website_url" placeholder="https://www.example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Your Age:</label>
+                        <input type="number" id="age" name="age" min="18" max="99" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                    </div>
+                </fieldset>
+                
+                <div class="form-group">
+                    <input type="submit" value="Submit Registration">
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
